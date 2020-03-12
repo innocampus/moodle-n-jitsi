@@ -174,7 +174,7 @@ function local_test_extend_navigation(global_navigation $nav) {
         $coursenode = $coursenode->parent;
     }
     if ($coursenode) {
-        $url = 'https://meet.moodle.tu-berlin.de/ISIS' . sprintf("%s%06d", $base, $courseid);
+        $url = sprintf("%s%06d", 'https://meet.moodle.tu-berlin.de/ISIS', $courseid);
         $coursenode->add('Videochat', $url, global_navigation::TYPE_CUSTOM, null, 'videochat');
     }
 }
