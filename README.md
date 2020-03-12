@@ -37,7 +37,7 @@ Update local url = "......" (somewhere around line 64) to your actual REST-API-U
 Our recent apache site-configuration shows the implementation of a combined Shibboleth and Lua-authentification. Any other combination is possible. 
 Whatever you like. It's all standard apache-tools.
 
-*(btw. ISIS = Information System for Instructors and Students (Trademark of TU Berlin since 2004))*
+*(btw. ISIS = Information System for Instructors and Students (Trademark of TU Berlin Moodle since 2004))*
 
 Include in your VirtualHost environment the LuaAuthzProvider as a new authentication provider:  
 ``` LuaAuthzProvider ISIS_ACL /etc/apache2/authz/video-isis-auth.lua ISIS_ACL_handler```
